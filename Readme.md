@@ -1,8 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Svetlana Miezhelis](https://up.htmlacademy.ru/adaptive/13/user/369121).
-* Наставник: `Неизвестно`.
-
+* Наставник:[Андрей Захарченко](https://htmlacademy.ru/profile/drewtsure).
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
