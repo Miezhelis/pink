@@ -12,7 +12,7 @@
 
 <body>
   <header class="main-header">
-    <div class="main-header__container">
+    <div class="container">
       <a class="main-header__logo">
         <svg class="logo-white" width="" height="">
         </svg>
@@ -24,7 +24,6 @@
         <li class="main-nav_item"><a href="#">Конкурс</a></li>
         <li class="main-nav_item"><a href="#">HTML ACADEMY</a></li>
       </ul>
-
     </div>
   </header>
 
@@ -40,7 +39,7 @@
       <form class="form" action="https://echo.htmlacademy.ru"  method="post">
         <p class="form__descr">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на&nbsp;вашу бонусную карту!</p>
 
-        <section class="form_section form_section--white">
+        <section class="form_section form_section--light">
           <label class="input__title" for="name">Имя: &#8432;</label>
           <input class="form__input" type="text" name="name" id="name" placeholder="Введите ваше имя" required>
 
@@ -52,9 +51,9 @@
         </section>
 
 
-        <section class="form_section form_section--grey">
+        <section class="form_section form_section--dark">
 
-          <fieldset>
+          <fieldset class="form__fieldset">
 
             <legend class="fieldset__title">Ваши безбашенные достижения в&nbsp;путешествии</legend>
 
@@ -91,30 +90,33 @@
           </fieldset>
         </section>
 
-        <section  class="form_section form_section--white">
+        <section  class="form_section form_section--light">
           <label for="phone" class="input__title">Номер телефона</label>
-          <input type="tel" name="phone">
+          <input type="tel" name="phone" class="form__input">
 
           <label for="email" class="input__title">Адрес почты</label>
-          <input type="email" name="email">
+          <input type="email" name="email" class="form__input">
         </section>
 
 
-        <section class="form-section form-section--grey">
+        <section class="form-section form-section--dark">
           <fieldset class="form__fieldset">
-            <legend class="form__title form__title--legend">С&nbsp;каким приложением путешествовали? &#8432;</legend>
+            <legend class="fieldset__title">С&nbsp;каким приложением путешествовали? &#8432;</legend>
 
             <ul class="user-platform">
               <li class="user-platform__item">
-                <input class="form__input form__input--radio" type="radio" name="platform" value="Pink для iOS" id="iOS" checked><label class="user-platform__title" for="iOS">Pink для iOS</label>
+                <input class="form__input form__input--radio" type="radio" name="platform" value="Pink для iOS" id="iOS" checked>
+                <label class="user-platform__title" for="iOS">Pink для iOS</label>
               </li>
 
               <li class="user-platform__item">
-                <input class="form__input form__input--radio" type="radio" name="platform" value="Pink на Android" id="Android"><label class="user-platform__title" for="Android">Pink на&nbsp;Android</label>
+                <input class="form__input form__input--radio" type="radio" name="platform" value="Pink на Android" id="Android">
+                <label class="user-platform__title" for="Android">Pink на&nbsp;Android</label>
               </li>
 
               <li class="user-platform__item">
-                <input class="form__input form__input--radio" type="radio" name="platform" value="Windows Phone" id="Windows"><label class="user-platform__title" for="Windows">Windows Phone</label>
+                <input class="form__input form__input--radio" type="radio" name="platform" value="Windows Phone" id="Windows">
+                <label class="user-platform__title" for="Windows">Windows Phone</label>
               </li>
             </ul>
 
@@ -122,9 +124,9 @@
         </section>
 
 
-        <section class="form_section form_section--white">
+        <section class="form_section form_section--light">
           <label for="descr"></label>
-          <textarea rows="5" cols="5" placeholder="Можно прям в красках,не стесняясь в выражениях" id="descr"></textarea>
+          <textarea rows="5" cols="50" placeholder="Можно прям в красках,не стесняясь в выражениях" id="descr"></textarea>
         </section>
 
         <button class="btn btn--green" type="submit">Отправить форму</button>
