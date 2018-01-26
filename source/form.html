@@ -20,8 +20,8 @@
       <button class="btn btn--toggle">Свернуть</button>
       <ul class="main-nav">
         <li class="main-nav_item"><a href="index.html">Главная</a></li>
-        <li class="main-nav_item"><a href="#">Фотографии</a></li>
-        <li class="main-nav_item"><a href="#">Конкурс</a></li>
+        <li class="main-nav_item"><a href="photo.html">Фотографии</a></li>
+        <li class="main-nav_item"><a>Конкурс</a></li>
         <li class="main-nav_item"><a href="#">HTML ACADEMY</a></li>
       </ul>
     </div>
@@ -41,13 +41,13 @@
         <section class="form__section form__section--light">
 
           <label class="form__label form__label--light" for="surname">Фамилия:</label>
-          <input class="achievements__text" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
+          <input class="form__control form__text-input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
 
           <label class="form__label form__label--light" for="name">Имя:</label>
-          <input class="achievements__text" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
+          <input class=" form__control form__text-input" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
 
           <label class="form__label form__label--light" for="patronymic">Отчество</label>
-          <input class="achievements__text" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+          <input class="form__control form__text-input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
         </section>
 
 
@@ -60,31 +60,31 @@
 
             <ul class="achievements">
               <li class="achievements__item">
-                <input class="achievements__checkbox" type="checkbox" name="shark" id="shark" checked>
+                <input class="form__control achievements__checkbox" type="checkbox" name="shark" id="shark" checked>
                 <label class="form__label form__label--dark" for="shark">Сделал селфи с&nbsp;акулой</label>
               </li>
 
               <li class="achievements__item">
-                <input class="achievements__checkbox" type="checkbox" name="sunburn" id="sunburn" checked>
+                <input class="form__control achievements__checkbox" type="checkbox" name="sunburn" id="sunburn" checked>
                 <label class="form__label form__label--dark" for="sunburn">Обгорел на&nbsp;пляже</label>
               </li>
 
               <li>
-                <input class="achievements__checkbox" type="checkbox" name="chuck" id="chuck">
+                <input class="form__control achievements__checkbox" type="checkbox" name="chuck" id="chuck">
                 <label class="form__label form__label--dark" for="chuck">Видел Чака Норриса</label>
               </li>
 
               <li>
-                <input class="achievements__checkbox" type="checkbox" name="souvenirs" id="souvenirs">
+                <input class="form__control achievements__checkbox" type="checkbox" name="souvenirs" id="souvenirs">
                 <label class="form__label form__label--dark" for="souvenirs">Накупил сувениров</label>
               </li>
 
               <li>
-                <input class="achievements__checkbox" type="checkbox" name="tower" id="tower" checked>
+                <input class="form__control achievements__checkbox" type="checkbox" name="tower" id="tower" checked>
                 <label class="form__label form__label--dark" for="tower">Удержал башню</label>
               </li>
               <li>
-                <input class="achievements__checkbox" type="checkbox" name="hotel" id="hotel">
+                <input class="form__control achievements__checkbox" type="checkbox" name="hotel" id="hotel">
                 <label class="form__label form__label--dark" for="hotel">Разгромил отель</label>
               </li>
             </ul>
@@ -93,10 +93,10 @@
 
         <section  class="form__section form__section--light">
           <label for="phone" class="form__label form__label--light">Номер телефона</label>
-          <input type="tel" name="phone" class="achievements__text">
+          <input type="tel" name="phone" class="form__control form__text-input">
 
           <label for="email" class="form__label form__label--light">Адрес почты</label>
-          <input type="email" name="email" class="achievements__text">
+          <input type="email" name="email" class="form__control form__text-input">
         </section>
 
 
@@ -106,17 +106,17 @@
 
             <ul class="user-platform">
               <li class="user-platform__item">
-                <input class="achievements__radio" type="radio" name="platform" value="Pink для iOS" id="iOS" checked>
+                <input class="form__control user-platform__radio" type="radio" name="platform" value="Pink для iOS" id="iOS" checked>
                 <label class="form__label form__label--dark" for="iOS">Pink для iOS</label>
               </li>
 
               <li class="user-platform__item">
-                <input class="achievements__radio" type="radio" name="platform" value="Pink на Android" id="Android">
+                <input class="form__control user-platform__radio" type="radio" name="platform" value="Pink на Android" id="Android">
                 <label class="form__label form__label--dark" for="Android">Pink на&nbsp;Android</label>
               </li>
 
               <li class="user-platform__item">
-                <input class="achievements__radio" type="radio" name="platform" value="Windows Phone" id="Windows">
+                <input class="form__control user-platform__radio" type="radio" name="platform" value="Windows Phone" id="Windows">
                 <label class="form__label form__label--dark" for="Windows">Windows Phone</label>
               </li>
             </ul>
@@ -131,7 +131,7 @@
         </section>
 
         <button class="btn btn--green" type="submit">Отправить форму</button>
-        <div class="form-correction"><span class="form-correction__symbol"></span> - обязательные <span class="form-correction__full-text">для заполнения </span>поля</div>
+        <div class="form-correction"><span class="form-correction__symbol">*</span> - обязательные <span class="form-correction__full-text">для заполнения </span>поля</div>
       </div>
     </form>
 
