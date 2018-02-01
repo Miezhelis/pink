@@ -1,0 +1,46 @@
+.features{
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  background-color: #f2f2f2;
+
+
+  &__container{
+    @include container;
+  }
+
+  &__heading-group{
+    padding: 35px 0 65px 0;
+    background-color: #fff;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  }
+
+  &__heading{
+    font-size: 24px;
+    line-height: 32px;
+    color:#000;
+    font-weight: 300;
+  }
+
+
+  &__list{
+    list-style: none;
+    padding-left: 0;
+    margin:0;
+    padding-top: 55px;
+  }
+
+  &__item{
+    margin-bottom: 38px;
+  }
+
+  &__item-title{
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  &__item-descr{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300
+  }
+}

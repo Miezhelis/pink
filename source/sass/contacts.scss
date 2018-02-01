@@ -1,0 +1,40 @@
+.contacts{
+  font-family: 'Open Sans', sans-serif;
+  -webkit-clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0);
+  clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0);
+  background-color: #fff;
+  padding: 45px 0 70px 0;
+  text-align: center;
+
+  &__container{
+    @include container;
+  }
+
+
+  &__heading{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 300;
+    color: #283645;
+  }
+
+  &__list{
+    list-style: none;
+    padding-left: 0;
+    margin:0;
+  }
+
+  &__title{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+  }
+
+  &__descr{
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+    color: $theme-red-color;
+  }
+}

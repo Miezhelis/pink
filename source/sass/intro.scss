@@ -1,0 +1,31 @@
+.intro{
+  font-family: 'Open Sans', sans-serif;
+  background-color: #1d2631;
+
+  &__img-wrapper{
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  &__container{
+    @include container;
+  }
+
+
+  &__download-app{
+    padding-top: 28px;
+    padding-bottom: 34px;
+    text-align: center;
+  }
+
+  &__platform-type>img:not(:last-child){
+    margin-right: 30px;
+  }
+
+  &__descr{
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: 300;
+  }
+}

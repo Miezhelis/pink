@@ -1,0 +1,36 @@
+@import "mixins.scss";
+@import "variables.scss";
+@import "scaffolding.scss";
+
+@import "button.scss";
+@import "block-title";
+
+@import "main-header.scss";
+@import "main-nav.scss";
+@import "page-title.scss";
+@import "page-footer.scss";
+@import "social.scss";
+
+/*index.html*/
+@import "intro.scss";
+@import "features.scss";
+@import "reviews.scss";
+@import "price.scss";
+@import "contacts.scss";
+@import "map.scss";
+
+/*form.html*/
+@import "form.scss";
+@import "popup.scss";
+
+/*photo.html*/
+@import "gallery.scss";
+@import "post.scss";
+@import "upload.scss";
+
+
+
+
+
+
+

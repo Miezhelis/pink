@@ -1,0 +1,61 @@
+.btn{
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  padding: 13px 40px;
+  text-decoration: none;
+  border-radius: 30px;
+  background-color: transparent;
+  margin-bottom: 10px;
+
+  &--download{
+    border:3px solid #fff;
+    margin-bottom: 22px;
+  }
+
+  &--green{
+    background-color: #2aab6d;
+    text-transform: uppercase;
+    line-height: 30px;
+    border:none;
+    border-radius: 2px;
+    margin-bottom: 40px;
+  }
+
+  &--like{
+    position: relative;
+    color: $theme-red-color;
+    font-size: 12px;
+    text-transform: uppercase;
+    border:none;
+    background-color: transparent;
+  }
+
+  &--like::before{
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    width: 14px;
+    height: 15px;
+    background-image: url("../img/icon-heart.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--post{
+    width: 280px;
+    color: $theme-red-color;
+    font-weight: bold;
+    border:3px solid $theme-red-color;
+    border-radius: 30px;
+  }
+
+  &--cancel{
+    width: 280px;
+    color: #dddfe0;
+    font-weight: bold;
+    border:3px solid #dddfe0;
+  }
+}

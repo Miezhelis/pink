@@ -4,40 +4,50 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pink</title>
-  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic,600&amp;subset=latin,cyrillic">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="main-header">
     <div class="main-header__container">
       <a class="main-header__logo">
-        <svg class="logo-white" width="" height="">
+
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve" class="logo-white">
+          <g>
+            <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
+            <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
+            <path fill="#FFFFFF" d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
+            <path fill="#FFFFFF" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
+          </g>
         </svg>
+
+
       </a>
       <button class="btn btn--toggle">Свернуть</button>
-      <ul class="main-nav">
-        <li class="main-nav_item"><a>Главная</a></li>
-        <li class="main-nav_item"><a href="photo.html">Фотографии</a></li>
-        <li class="main-nav_item"><a href="form.html">Конкурс</a></li>
-        <li class="main-nav_item"><a href="#">HTML ACADEMY</a></li>
-      </ul>
 
+      <ul class="main-nav">
+        <li class="main-nav__item"><a>Главная</a></li>
+        <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+        <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+        <li class="main-nav__item"><a href="#">HTML ACADEMY</a></li>
+      </ul>
     </div>
   </header>
-
   <main>
 
-
     <section class="intro">
+      <div class="intro__img-wrapper">
+        <img src="img/bg-back-mobile@1x.jpg" height="395" width="100%" alt="">
+      </div>
       <div class="intro__container">
         <div class="intro__download-app">
           <a class="btn btn--download" href="#">Скачать приложение</a>
           <div class="intro__platform-type">
-            <img src="" class="intro__platform intro__platform--apple">
-            <img src="" class="intro__platform intro__platform--android">
-            <img src="" class="intro__platform intro__platform--windows">
+            <img src="img/logo-apple.svg" class="intro__platform intro__platform--apple">
+            <img src="img/logo-android.svg" class="intro__platform intro__platform--android">
+            <img src="img/logo-microsoft.svg" class="intro__platform intro__platform--windows">
           </div>
           <p class="intro__descr">Доступно для iPhone, iPad, Android, Windows Phone, OS&nbsp;X, Windows&nbsp;8</p>
         </div>
@@ -46,26 +56,31 @@
 
     <section class="features">
       <div class="features__container">
-        <h2 class="features__heading">Устали от&nbsp;серости мегаполиса?</h2>
-        <h2 class="features__heading">Нам есть, что вам предложить!</h2>
+        <div class="features__heading-group">
+          <h2 class="features__heading">Устали от&nbsp;серости мегаполиса?</h2>
+          <h2 class="features__heading">Нам есть, что вам предложить!</h2>
+        </div>
 
 
         <ul class="features__list">
-          <li class="features-item">
-            <h3 class="features-item__title">Поднимает настроение</h3>
-            <p class="features-item__descr">Приложение позволит вам победить осеннюю хандру и&nbsp;деперессию буквально в&nbsp;несколько кликов!</p>
+          <li class="features__item">
+            <h3 class="features__item-title">Поднимает настроение</h3>
+            <p class="features__item-descr">Приложение позволит вам победить осеннюю хандру и&nbsp;деперессию буквально в&nbsp;несколько кликов!</p>
           </li>
 
-          <li class="features-item">
-            <h3 class="features-item__title">Меняет мир вокруг</h3>
-            <p class="features-item__descr">Сделайте снимок и&nbsp;украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          <li class="features__item">
+            <h3 class="features__item-title">Меняет мир вокруг</h3>
+            <p class="features__item-descr">Сделайте снимок и&nbsp;украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
 
-          <li class="features-item">
-            <h3 class="features-item__title">Заводит новых друзей</h3>
-            <p class="features-item__descr">Ставьте лайки, комментируте, делитесь фотографиями с&nbsp;друзьями и&nbsp;заводите новых</p>
+          <li class="features__item">
+            <h3 class="features__item-title">Заводит новых друзей</h3>
+            <p class="features__item-descr">Ставьте лайки, комментируте, делитесь фотографиями с&nbsp;друзьями и&nbsp;заводите новых</p>
           </li>
         </ul>
+
+        <img src="img/iphone-screen-mobile@1x.png" width="" height="" alt="Всем привет">
+
       </div>
     </section>
 
@@ -74,20 +89,21 @@
     <section class="reviews">
       <div class="reviews__container">
 
-        <article class="reviews__item reviews__item--1">
-          <h3 class="reviews-item__title">Николай Петров</h3>
-          <p class="reviews-item__text">&laquo;Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть на&nbsp;привычные серые вещи! А&nbsp;ещё я&nbsp;познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной фотографии!&raquo;</p>
+        <article class="reviews__item">
+          <h3 class="reviews__item-title">Николай Петров</h3>
+          <p class="reviews__item-text">&laquo;Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть на&nbsp;привычные серые вещи! А&nbsp;ещё я&nbsp;познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной фотографии!&raquo;</p>
         </article>
 
-        <article class="reviews__item reviews__item--2">
-          <h3 class="reviews-item__title">Николай Петров</h3>
-          <p class="reviews-item__text">&laquo;Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть на&nbsp;привычные серые вещи! А&nbsp;ещё я&nbsp;познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной фотографии!&raquo;</p>
+        <article class="reviews__item">
+          <h3 class="reviews__item-title">Николай Петров</h3>
+          <p class="reviews__item-text">&laquo;Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть на&nbsp;привычные серые вещи! А&nbsp;ещё я&nbsp;познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной фотографии!&raquo;</p>
         </article>
 
-        <article class="reviews__item reviews__item--3">
-          <h3 class="reviews-item__title">Николай Петров</h3>
-          <p class="reviews-item__text">&laquo;Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть на&nbsp;привычные серые вещи! А&nbsp;ещё я&nbsp;познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной фотографии!&raquo;</p>
+        <article class="reviews__item">
+          <h3 class="reviews__item-title">Николай Петров</h3>
+          <p class="reviews__item-text">&laquo;Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть на&nbsp;привычные серые вещи! А&nbsp;ещё я&nbsp;познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной фотографии!&raquo;</p>
         </article>
+
 
 
 
@@ -102,21 +118,65 @@
 
     <section class="price">
       <div class="price__container">
+
         <table class="price__table">
           <tbody>
             <tr>
-              <th class="table__heading">
-                &nbsp;
-              </th>
-              <th class="table__heading">
+              <th colspan="2" class="price__table-heading">
                 <p>База</p>
                 <p>1,99 USD</p>
               </th>
-              <th class="table__heading">
+            </tr>
+
+            <tr>
+              <td>Розовый фильтр</td>
+              <td>да</td>
+            </tr>
+
+            <tr>
+              <td>Смайлики</td>
+              <td>нет</td>
+            </tr>
+
+            <tr>
+              <td>Комментарии</td>
+              <td>нет</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+        <table class="price__table">
+          <tbody>
+            <tr>
+              <th colspan="2" class="price__table-heading">
                 <p>Стандарт</p>
                 <p>3,99 USD</p>
               </th>
-              <th class="table__heading">
+            </tr>
+
+            <tr>
+              <td>Розовый фильтр</td>
+              <td>да</td>
+            </tr>
+
+            <tr>
+              <td>Смайлики</td>
+              <td>да</td>
+            </tr>
+
+            <tr>
+              <td>Комментарии</td>
+              <td>нет</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+        <table class="price__table">
+          <tbody>
+            <tr>
+              <th colspan="2" class="price__table-heading">
                 <p>Анлим</p>
                 <p>9,99 USD</p>
               </th>
@@ -125,25 +185,21 @@
             <tr>
               <td>Розовый фильтр</td>
               <td>да</td>
-              <td>да</td>
-              <td>да</td>
             </tr>
 
             <tr>
               <td>Смайлики</td>
-              <td>нет</td>
-              <td>да</td>
               <td>да</td>
             </tr>
 
             <tr>
               <td>Комментарии</td>
-              <td>нет</td>
-              <td>нет</td>
               <td>да</td>
             </tr>
+
           </tbody>
         </table>
+
 
 
         <div class="slider-pagination">
@@ -157,7 +213,7 @@
 
     <section class="contacts">
       <div class="contacts__container">
-        <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
+        <h2 class="contacts__heading">Остались вопросы? Свяжитесь с нами!</h2>
 
         <ul class="contacts__list">
           <li class="contacts__item">
@@ -180,9 +236,14 @@
     </section>
 
 
-    <section class="map" id="map"></section>
+    <section class="map" id="map">
+
+    </section>
 
   </main>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-0sTs4swz4mmctWWmv46sxIhZqjhaOwk"></script>
+  <script src="js/main.js"></script>
 
 </body>
 </html>

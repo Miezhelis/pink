@@ -1,0 +1,93 @@
+.form {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 45px 0;
+
+  &__descr {
+    @include container;
+    @include page-descr;
+  }
+
+  &__section {
+    @include container;
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+    &--light {
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &--dark {
+      background-color: #c6c9cd;
+    }
+  }
+
+  &__label {
+    font-size: 14px;
+    margin-left: 20px;
+
+    &--light {
+      color: $theme-red-color;
+      text-transform: uppercase;
+    }
+
+    &--dark {
+      color: #283645;
+    }
+  }
+
+  &__text-input {
+    padding: 18px;
+    border: 2px solid #e5e5e5;
+    width: 280px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+  }
+
+  &__fieldset {
+    border: none;
+    padding: 0;
+  }
+
+  &__fieldset-title {
+    color: $theme-red-color;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+
+  &__achievements {
+    @include ul-reset;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__user-platform {
+    @include ul-reset;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__textarea {
+    width: 280px;
+    height: 200px;
+    resize: none;
+    line-height: 30px;
+    color: #283645;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 48px;
+  }
+
+  &__correction-symbol{
+    color:$theme-red-color;
+  }
+}
