@@ -1,29 +1,27 @@
-.page-footer{
-  font-family: 'Open Sans', sans-serif;
-  background-color: #fff;
-  font-size: 14px;
+.page-footer {
+  background-color: #ffffff;
   line-height: 18px;
 
-  &__container{
+  .page-footer__container {
     @include container;
-    padding-top:25px;
-    padding-bottom:25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     text-align: center;
   }
 
-  &__copyright{
+  .page-footer__copyright {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
 
-  &__text{
+  .page-footer__text {
     margin: 0;
     margin-right: 15px;
   }
 
-  &__link{
+  .page-footer__link {
     display: inline-block;
     height: 34px;
     width: 26px;

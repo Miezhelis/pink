@@ -1,0 +1,32 @@
+.main-nav {
+  text-align: center;
+}
+
+.main-nav__list {
+  @include ul-reset;
+}
+
+.main-nav__item {
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 15px;
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+.main-nav__toggle {
+  z-index: 2;
+  display: block;
+  width: 70px;
+  height: 50px;
+  background-color: #1c2530;
+  cursor: pointer;
+  border: none;
+}
+

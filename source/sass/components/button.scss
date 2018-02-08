@@ -1,39 +1,39 @@
-.btn{
+.btn {
   display: inline-block;
-  font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   line-height: 22px;
-  color: #fff;
+  color: #ffffff;
   padding: 13px 40px;
   text-decoration: none;
   border-radius: 30px;
   background-color: transparent;
   margin-bottom: 10px;
+  cursor: pointer;
 
-  &--download{
-    border:3px solid #fff;
+  &--download {
+    border: 3px solid #ffffff;
     margin-bottom: 22px;
   }
 
-  &--green{
+  &--green {
     background-color: #2aab6d;
     text-transform: uppercase;
     line-height: 30px;
-    border:none;
+    border: none;
     border-radius: 2px;
     margin-bottom: 40px;
   }
 
-  &--like{
+  &--like {
     position: relative;
     color: $theme-red-color;
     font-size: 12px;
     text-transform: uppercase;
-    border:none;
+    border: none;
     background-color: transparent;
   }
 
-  &--like::before{
+  &--like::before {
     content: "";
     position: absolute;
     top: 18px;
@@ -44,18 +44,18 @@
     background-repeat: no-repeat;
   }
 
-  &--post{
+  &--post {
     width: 280px;
     color: $theme-red-color;
     font-weight: bold;
-    border:3px solid $theme-red-color;
+    border: 3px solid $theme-red-color;
     border-radius: 30px;
   }
 
-  &--cancel{
+  &--cancel {
     width: 280px;
     color: #dddfe0;
     font-weight: bold;
-    border:3px solid #dddfe0;
+    border: 3px solid #dddfe0;
   }
 }

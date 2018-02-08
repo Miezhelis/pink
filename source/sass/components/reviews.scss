@@ -1,32 +1,29 @@
-.reviews{
-  font-family: 'Open Sans', sans-serif;
+.reviews {
   text-align: center;
   background-color: #f2f2f2;
   margin-top: -40px;
   padding-bottom: 90px;
 
-
-  &__container{
+  .reviews__container {
     @include container;
   }
 
-  &__item{
+  .reviews__item {
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-    background-color: #fff;
-    padding:45px 0 115px 0;
+    background-color: #ffffff;
+    padding: 45px 0 115px 0;
   }
 
-  &__item-title{
+  .reviews__item-title {
     margin: 0;
     font-size: 18px;
     line-height: 30px;
     font-weight: bold;
   }
 
-  &__item-text{
+  .reviews__item-text {
     margin: 0;
-    color:#283645;
-    font-size: 14px;
+    color: #283645;
     line-height: 30px;
     font-weight: 400;
   }

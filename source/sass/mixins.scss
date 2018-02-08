@@ -1,8 +1,6 @@
 @mixin container {
   width: 320px;
   margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
 }
 
 @mixin ul-reset {
@@ -11,13 +9,7 @@
   padding-left: 0;
 }
 
-
-@mixin page-descr{
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 400;
+@mixin page-descr {
   margin-bottom: 10px;
-  font-family: 'Open Sans', sans-serif;
   text-align: center;
 }
-

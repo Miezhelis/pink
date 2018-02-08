@@ -1,0 +1,26 @@
+.gallery {
+  text-align: center;
+  background-color: #ffffff;
+
+  .gallery__item:not(.gallery__item--special) {
+    @include container;
+    padding: 0 20px;
+  }
+
+  .gallery__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .gallery__img {
+    display: block;
+  }
+
+  .gallery__img-wpapper--special {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
