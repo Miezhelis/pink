@@ -1,0 +1,35 @@
+.intro {
+  background-color: #1d2631;
+
+  .intro__img-wrapper {
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .intro__img {
+    display: block;
+  }
+
+  .intro__container {
+    @include container;
+  }
+
+  .intro__download-app {
+    padding-top: 28px;
+    padding-bottom: 34px;
+    text-align: center;
+  }
+
+  .intro__platform-type > img:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .intro__descr {
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 300;
+  }
+}

@@ -1,0 +1,41 @@
+.features {
+  text-align: center;
+  background-color: #f2f2f2;
+
+  .features__container {
+    @include container;
+  }
+
+  .features__heading-group {
+    padding: 35px 0 65px 0;
+    background-color: #ffffff;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  }
+
+  .features__heading {
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+    font-weight: 300;
+  }
+
+  .features__list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    padding-top: 55px;
+  }
+
+  .features__item {
+    margin-bottom: 38px;
+  }
+
+  .features__item-title {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .features__item-descr {
+    font-weight: 300;
+  }
+}

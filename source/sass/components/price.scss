@@ -1,0 +1,27 @@
+.price {
+  text-align: center;
+
+  .price__container {
+    @include container;
+    overflow: hidden;
+  }
+
+  .price__table {
+    width: 280px;
+    transform: translateX(-257px);
+
+    .price__table-heading {
+      background-color: #283645;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 30px;
+      padding: 20px 0;
+      min-width: 275px;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}

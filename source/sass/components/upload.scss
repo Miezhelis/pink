@@ -1,0 +1,30 @@
+.upload {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding-top: 20px;
+
+  .upload__img-wrapper {
+    @include container;
+  }
+
+  .upload__editor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+  }
+
+  .upload__item:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  .upload__range {
+    border-bottom: 2px solid #dddfe0;
+    margin-bottom: 35px;
+  }
+
+  .upload__button-group {
+    @include container;
+  }
+}

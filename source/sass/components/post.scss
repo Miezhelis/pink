@@ -1,0 +1,43 @@
+.post {
+  text-align: left;
+  color: #283645;
+  background-color: #f2f2f2;
+
+  .post__details {
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .post__author {
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .post__date {
+    font-size: 14px;
+    font-weight: 300;
+    color: #949aa1;
+    text-transform: uppercase;
+  }
+
+  .post__descr {
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+  }
+
+  .post__action {
+    text-align: left;
+  }
+
+  .post__stats-count {
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
+.post--special {
+  margin: 0 auto;
+  max-width: 280px;
+}
+
+

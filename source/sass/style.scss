@@ -1,0 +1,24 @@
+@import "mixins.scss";
+@import "variables.scss";
+@import "scaffolding.scss";
+@import "components/button.scss";
+@import "components/call-to-action";
+@import "components/main-header.scss";
+@import "components/main-nav.scss";
+@import "components/page-title.scss";
+@import "components/page-footer.scss";
+@import "components/social.scss";
+/*index.html*/
+@import "components/intro.scss";
+@import "components/features.scss";
+@import "components/reviews.scss";
+@import "components/price.scss";
+@import "components/contacts.scss";
+@import "components/map.scss";
+/*form.html*/
+@import "components/form.scss";
+@import "components/popup.scss";
+/*photo.html*/
+@import "components/gallery.scss";
+@import "components/post.scss";
+@import "components/upload.scss";

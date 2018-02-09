@@ -1,0 +1,9 @@
+.main-header {
+  background-color: #283645;
+  font-size: 18px;
+  line-height: 32px;
+
+  .main-header__container {
+    @include container;
+  }
+}
