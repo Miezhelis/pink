@@ -10,4 +10,10 @@
     font-size: inherit;
     font-weight: 400;
   }
+
+  @media (min-width: $tablet-width) {
+    .call-to-action__text {
+      font-size: 18px;
+    }
+  }
 }

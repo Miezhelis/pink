@@ -1,8 +1,8 @@
 @import "mixins.scss";
 @import "variables.scss";
 @import "scaffolding.scss";
-@import "components/button.scss";
-@import "components/call-to-action";
+@import "components/btn.scss";
+@import "components/call-to-action.scss";
 @import "components/main-header.scss";
 @import "components/main-nav.scss";
 @import "components/page-title.scss";
@@ -11,6 +11,7 @@
 /*index.html*/
 @import "components/intro.scss";
 @import "components/features.scss";
+@import "components/research.scss";
 @import "components/reviews.scss";
 @import "components/price.scss";
 @import "components/contacts.scss";

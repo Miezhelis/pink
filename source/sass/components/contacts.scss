@@ -16,6 +16,15 @@
     color: #283645;
   }
 
+  @media (min-width: $tablet-width) {
+    .contacts__heading {
+      font-size: 40px;
+      line-height: 48px;
+      max-width: 410px;
+      margin: auto;
+    }
+  }
+
   .contacts__list {
     list-style: none;
     padding-left: 0;
@@ -34,5 +43,20 @@
     line-height: 30px;
     font-weight: 300;
     color: $theme-red-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $tablet-width) {
+    .contacts__item {
+      max-width: 245px;
+    }
   }
 }

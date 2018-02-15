@@ -1,6 +1,11 @@
 @mixin container {
   width: 320px;
   margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: 660px) {
+    width: 660px;
+  }
 }
 
 @mixin ul-reset {

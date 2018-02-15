@@ -1,12 +1,12 @@
 .intro {
   background-color: #1d2631;
-
-  .intro__img-wrapper {
-    background-image: url("../img/bg-back-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
+  display: flex;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: 320px 400px;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 670px;
 
   .intro__img {
     display: block;
@@ -16,8 +16,12 @@
     @include container;
   }
 
+  .intro__heading {
+    visibility: hidden;
+  }
+
   .intro__download-app {
-    padding-top: 28px;
+    padding-top: 20px;
     padding-bottom: 34px;
     text-align: center;
   }
@@ -31,5 +35,30 @@
     line-height: 24px;
     color: #ffffff;
     font-weight: 300;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    flex-direction: row-reverse;
+    height: 620px;
+    background-size: cover;
+    align-items: flex-end;
+
+    @media (min-width: $tablet-width) {
+      .intro__heading {
+        visibility: visible;
+        font-size: 40px;
+        line-height: 48px;
+        font-weight: 300;
+        color: #ffffff;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      .intro__container {
+        margin: 0;
+      }
+    }
   }
 }

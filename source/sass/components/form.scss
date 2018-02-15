@@ -12,11 +12,10 @@
   @include container;
   font-size: 18px;
   line-height: 30px;
-  padding: 35px 20px;
   color: #283645;
 
   &:first-child {
-    padding: 0 20px 35px;
+    padding-top: 0;
   }
 }
 

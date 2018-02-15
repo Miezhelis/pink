@@ -2,9 +2,23 @@
   text-align: center;
   background-color: #ffffff;
 
+  .gallery__list-wrapper {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: stretch;
+    }
+  }
+
   .gallery__item:not(.gallery__item--special) {
     @include container;
-    padding: 0 20px;
+
+    @media (min-width: $tablet-width) {
+      width: 300px;
+      padding: 0;
+    }
   }
 
   .gallery__item:not(:last-child) {
@@ -13,6 +27,7 @@
 
   .gallery__img {
     display: block;
+    width: 100%;
   }
 
   .gallery__img-wpapper--special {
