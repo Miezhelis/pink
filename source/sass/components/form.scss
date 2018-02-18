@@ -24,7 +24,11 @@
 }
 
 .form__section--dark {
-  background-color: #c6c9cd;
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+  }
 }
 
 .form__label {
@@ -33,11 +37,27 @@
   justify-content: center;
   align-items: flex-start;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 55px;
+  }
 }
 
 .form__label--dark {
   flex-direction: row;
   align-items: center;
+}
+
+.form__fielset {
+  border: none;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid #ececec;
+    padding: 35px 55px;
+  }
 }
 
 .form__caption {
@@ -46,7 +66,22 @@
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 300;
-  margin: 0;
+
+  &--contacts {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+}
+
+.form__label--contacts {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
 }
 
 .form__text-input {
@@ -57,6 +92,23 @@
   width: 280px;
   box-sizing: border-box;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  &--intro {
+    @media (min-width: $tablet-width) {
+      margin-left: 20px;
+    }
+  }
+
+  &--contacts{
+    @media (min-width: $tablet-width){
+      border-right: 60px solid #e5e5e5;
+    }
+  }
 }
 
 .form__achievements {
@@ -82,9 +134,37 @@
   padding: 20px;
   box-sizing: border-box;
   margin-bottom: 48px;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+  }
+}
+
+.form__submit-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
 }
 
 .form__correction-symbol {
   color: $theme-red-color;
 }
 
+.form__btn {
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width){
+    padding: 16px 60px;
+  }
+}
+
+.form__reverse-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

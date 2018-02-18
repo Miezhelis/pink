@@ -15,7 +15,7 @@
     margin: 0 auto;
     padding: 20px;
 
-    @media (min-width: $tablet-width){
+    @media (min-width: $tablet-width) {
       margin: 0;
       width: 100%;
     }
@@ -51,6 +51,10 @@
 .post--special {
   margin: 0 auto;
   max-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 620px;
+  }
 }
 
 

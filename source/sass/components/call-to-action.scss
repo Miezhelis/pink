@@ -2,18 +2,30 @@
   @include page-descr;
   margin: 0;
   @include container;
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 95px;
+  padding-bottom: 75px;
   color: #283645;
 
   .call-to-action__text {
     font-size: inherit;
     font-weight: 400;
+    margin: 0;
+
+    &--form {
+      display: none;
+    }
   }
 
   @media (min-width: $tablet-width) {
     .call-to-action__text {
       font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
+  &--form {
+    @media (min-width: $tablet-width) {
+      max-width: 575px;
     }
   }
 }
