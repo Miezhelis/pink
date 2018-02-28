@@ -1,3 +1,36 @@
-.research{
+.research {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    background-color: #f2f2f2;
+    color: #000000;
+  }
+
+  .research__container {
+    @include container;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .research__lead {
+    max-width: 545px;
+  }
+
+  .research__title {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .research__text {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+
+  .research__link {
+    color: $theme-red-color;
+    font-size: 18px;
+  }
 }

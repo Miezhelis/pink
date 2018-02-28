@@ -4,11 +4,21 @@
 
 .main-nav__list {
   @include ul-reset;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    border: none;
+  }
 }
 
 .main-nav__item {
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000000;
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
 
   a {
     text-decoration: none;
@@ -17,6 +27,10 @@
     padding: 15px;
     display: inline-block;
     width: 100%;
+
+    @media (min-width: $desktop-width) {
+      text-transform: capitalize;
+    }
   }
 }
 
@@ -28,5 +42,9 @@
   background-color: #1c2530;
   cursor: pointer;
   border: none;
+
+  @media (min-width: $desktop-width){
+    display: none;
+  }
 }
 

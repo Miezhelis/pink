@@ -18,14 +18,18 @@
     line-height: 32px;
     color: #000000;
     font-weight: 300;
-  }
 
-  @media (min-width: $tablet-width) {
-    .features__heading {
+    @media (min-width: $tablet-width) {
       font-size: 40px;
       line-height: 48px;
       max-width: 590px;
       margin: 0 auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 50px;
+      line-height: 60px;
+      max-width: 750px;
     }
   }
 
@@ -60,7 +64,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    .features__item:not(:last-child){
+    .features__item:not(:last-child) {
       margin-bottom: 0;
     }
   }

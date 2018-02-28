@@ -48,13 +48,8 @@
   }
 }
 
-.post--special {
-  margin: 0 auto;
-  max-width: 280px;
-
-  @media (min-width: $tablet-width) {
-    max-width: 620px;
-  }
+.gallery__special-wrapper {
+  @include container;
 }
 
 

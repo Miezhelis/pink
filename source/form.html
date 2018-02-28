@@ -52,103 +52,33 @@
   </section>
 
   <form class="form" action="https://echo.htmlacademy.ru" method="post">
-
-    <section class="form__section form__section--light">
-
-      <label class="form__label form__caption" for="surname">Фамилия:
-        <input class="form__control form__text-input form__text-input--intro" type="text" name="surname" id="surname"
-               placeholder="Укажите фамилию *" required>
-      </label>
-
-
-      <label class="form__label form__caption" for="name">Имя:
-        <input class=" form__control form__text-input form__text-input--intro" type="text" name="name" id="name"
-               placeholder="Введите ваше имя *" required>
-      </label>
-
-
-      <label class="form__label form__caption" for="patronymic">Отчество:
-        <input class="form__control form__text-input form__text-input--intro" type="text" name="patronymic"
-               id="patronymic"
-               placeholder="Ну и отчество тоже">
-      </label>
-    </section>
-
-
-    <div class="form__reverse-wrapper">
-      <section class="form__section form__section--dark">
-        <fieldset class="form__fielset">
-
-          <legend class="form__caption">Ваши безбашенные достижения в&nbsp;путешествии</legend>
-
-          <ul class="form__achievements">
-
-            <li class="form__achievements-item">
-              <label class="form__label form__label--dark" for="shark">
-                <input class="form__control form__achievements-checkbox" type="checkbox" name="shark" id="shark"
-                       checked>
-                Сделал селфи с&nbsp;акулой</label>
-            </li>
-
-            <li class="form__achievements-item">
-              <label class="form__label form__label--dark" for="sunburn">
-                <input class="form__control form__achievements-checkbox" type="checkbox" name="sunburn" id="sunburn"
-                       checked>
-                Обгорел на&nbsp;пляже</label>
-            </li>
-
-            <li class="form__achievements-item">
-              <label class="form__label form__label--dark" for="chuck">
-                <input class="form__control form__achievements-checkbox" type="checkbox" name="chuck" id="chuck">
-                Видел Чака Норриса</label>
-            </li>
-
-            <li class="form__achievements-item">
-              <label class="form__label form__label--dark" for="souvenirs">
-                <input class="form__control form__achievements-checkbox" type="checkbox" name="souvenirs"
-                       id="souvenirs">
-                Накупил сувениров</label>
-            </li>
-
-            <li class="form__achievements-item">
-              <label class="form__label form__label--dark" for="tower">
-                <input class="form__control form__achievements-checkbox" type="checkbox" name="tower" id="tower"
-                       checked>
-                Удержал башню</label>
-            </li>
-
-            <li class="form__achievements-item">
-              <label class="form__label form__label--dark">
-                <input class="form__control form__achievements-checkbox" type="checkbox" name="hotel">
-                Разгромил отель</label>
-            </li>
-          </ul>
-        </fieldset>
-      </section>
-
+    <div class="form__section-wrapper">
       <section class="form__section form__section--light">
-        <fieldset class="form__fielset">
-          <legend class="form__caption form__caption--contacts">Контактная информация</legend>
-          <label class="form__label form__label--contacts form__caption">
-            Номер телефона
-            <input type="tel" name="phone" class="form__control form__text-input form__text-input--contacts"
-                   placeholder="Номер, пожалуйста">
-          </label>
+
+        <label class="form__label form__caption" for="surname">Фамилия:
+          <input class="form__control form__text-input form__text-input--intro" type="text" name="surname" id="surname"
+                 placeholder="Укажите фамилию *" required>
+        </label>
 
 
-          <label class="form__label form__label--contacts form__caption">
-            Адрес почты
-            <input type="email" name="email" class="form__control form__text-input form__text-input--contacts"
-                   placeholder="Введите почту*">
-          </label>
-        </fieldset>
+        <label class="form__label form__caption" for="name">Имя:
+          <input class=" form__control form__text-input form__text-input--intro" type="text" name="name" id="name"
+                 placeholder="Введите ваше имя *" required>
+        </label>
+
+
+        <label class="form__label form__caption" for="patronymic">Отчество:
+          <input class="form__control form__text-input form__text-input--intro" type="text" name="patronymic"
+                 id="patronymic"
+                 placeholder="Ну и отчество тоже">
+        </label>
       </section>
 
       <section class="form__section form__section--dark">
         <fieldset class="form__fielset">
-          <legend class="form__caption">C каким приложением путешествовали?*</legend>
+          <legend class="form__caption">C каким приложением путешествовали?</legend>
 
-          <ul class="form__user-platform">
+          <ul class="form__user-platform form__list">
 
             <li class="user-platform__item">
               <label class="form__label form__label--dark">
@@ -176,6 +106,74 @@
       </section>
     </div>
 
+    <section class="form__section form__section--dark">
+      <fieldset class="form__fielset">
+
+        <legend class="form__caption">Ваши безбашенные достижения в&nbsp;путешествии</legend>
+
+        <ul class="form__achievements form__list">
+
+          <li class="form__achievements-item">
+            <label class="form__label form__label--dark" for="shark">
+              <input class="form__control form__achievements-checkbox" type="checkbox" name="shark" id="shark"
+                     checked>
+              Сделал селфи с&nbsp;акулой</label>
+          </li>
+
+          <li class="form__achievements-item">
+            <label class="form__label form__label--dark" for="sunburn">
+              <input class="form__control form__achievements-checkbox" type="checkbox" name="sunburn" id="sunburn"
+                     checked>
+              Обгорел на&nbsp;пляже</label>
+          </li>
+
+          <li class="form__achievements-item">
+            <label class="form__label form__label--dark" for="chuck">
+              <input class="form__control form__achievements-checkbox" type="checkbox" name="chuck" id="chuck">
+              Видел Чака Норриса</label>
+          </li>
+
+          <li class="form__achievements-item">
+            <label class="form__label form__label--dark" for="souvenirs">
+              <input class="form__control form__achievements-checkbox" type="checkbox" name="souvenirs"
+                     id="souvenirs">
+              Накупил сувениров</label>
+          </li>
+
+          <li class="form__achievements-item">
+            <label class="form__label form__label--dark" for="tower">
+              <input class="form__control form__achievements-checkbox" type="checkbox" name="tower" id="tower"
+                     checked>
+              Удержал башню</label>
+          </li>
+
+          <li class="form__achievements-item">
+            <label class="form__label form__label--dark">
+              <input class="form__control form__achievements-checkbox" type="checkbox" name="hotel">
+              Разгромил отель</label>
+          </li>
+        </ul>
+      </fieldset>
+    </section>
+
+    <section class="form__section form__section--light">
+      <fieldset class="form__fielset">
+        <legend class="form__caption form__caption--contacts">Контактная информация</legend>
+        <div class="form__label-wrapper">
+          <label class="form__label form__label--contacts form__caption">
+            Номер телефона
+            <input type="tel" name="phone" class="form__control form__text-input form__text-input--contacts"
+                   placeholder="Номер, пожалуйста">
+          </label>
+
+          <label class="form__label form__label--contacts form__caption">
+            Адрес почты
+            <input type="email" name="email" class="form__control form__text-input form__text-input--contacts"
+                   placeholder="Введите почту*">
+          </label>
+        </div>
+      </fieldset>
+    </section>
 
     <section class="form__section form__section--light">
       <fieldset class="form__fielset">

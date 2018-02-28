@@ -14,6 +14,11 @@
     min-height: 325px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-top: 110px;
+    min-height: 400px;
+  }
+
   .page-title__container {
     @include container;
     padding: 0;
