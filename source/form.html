@@ -28,10 +28,10 @@
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list">
-        <li class="main-nav__item main-nav__item--active"><a href="index.html">Главная</a></li>
-        <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-        <li class="main-nav__item"><a>Конкурс</a></li>
-        <li class="main-nav__item"><a href="#">HTML ACADEMY</a></li>
+        <li class="main-nav__item main-nav__item--active"><a href="index.html" class="main-nav__link">Главная</a></li>
+        <li class="main-nav__item"><a href="photo.html" class="main-nav__link">Фотографии</a></li>
+        <li class="main-nav__item"><a class="main-nav__link">Конкурс</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">HTML ACADEMY</a></li>
       </ul>
     </nav>
   </div>
@@ -52,56 +52,28 @@
   </section>
 
   <form class="form" action="https://echo.htmlacademy.ru" method="post">
-    <div class="form__section-wrapper">
-      <section class="form__section form__section--light">
 
-        <label class="form__label form__caption" for="surname">Фамилия:
-          <input class="form__control form__text-input form__text-input--intro" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
-        </label>
+    <section class="form__section form__section--tight">
 
-
-        <label class="form__label form__caption" for="name">Имя:
-          <input class=" form__control form__text-input form__text-input--intro" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
-        </label>
+      <label class="form__label form__caption" for="surname">
+        <span>Фамилия:</span>
+        <input class="form__control form__text-input form__text-input--intro" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
+      </label>
 
 
-        <label class="form__label form__caption" for="patronymic">Отчество:
-          <input class="form__control form__text-input form__text-input--intro" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
-        </label>
-      </section>
+      <label class="form__label form__caption" for="name">
+        <span>Имя:</span>
+        <input class=" form__control form__text-input form__text-input--intro" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
+      </label>
 
-      <section class="form__section form__section--dark">
-        <fieldset class="form__fielset">
-          <legend class="form__caption">C каким приложением путешествовали?</legend>
 
-          <ul class="form__user-platform form__list">
+      <label class="form__label form__caption" for="patronymic">
+        <span>Отчество:</span>
+        <input class="form__control form__text-input form__text-input--intro" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+      </label>
+    </section>
 
-            <li class="user-platform__item">
-              <label class="form__label form__label--dark">
-                <input class="form__control user-platform__radio" type="radio" name="platform" value="Pink для iOS" checked>
-                Pink для iOS
-              </label>
-            </li>
-
-            <li class="user-platform__item">
-              <label class="form__label form__label--dark">
-                <input class="form__control user-platform__radio" type="radio" name="platform" value="Pink на Android">
-                Pink на&nbsp;Android
-              </label>
-            </li>
-
-            <li class="user-platform__item">
-              <label class="form__label form__label--dark">
-                <input class="form__control user-platform__radio" type="radio" name="platform" value="Windows Phone">
-                Windows Phone
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-      </section>
-    </div>
-
-    <section class="form__section form__section--dark">
+    <section class="form__section form__section">
       <fieldset class="form__fielset">
 
         <legend class="form__caption">Ваши безбашенные достижения в&nbsp;путешествии</legend>
@@ -147,7 +119,7 @@
       </fieldset>
     </section>
 
-    <section class="form__section form__section--light">
+    <section class="form__section form__section">
       <fieldset class="form__fielset">
         <legend class="form__caption form__caption--contacts">Контактная информация</legend>
         <div class="form__label-wrapper">
@@ -164,9 +136,39 @@
       </fieldset>
     </section>
 
-    <section class="form__section form__section--light">
+    <section class="form__section form__section--tight">
       <fieldset class="form__fielset">
-        <legend class="form__label form__caption">Опишите свои эмоции</legend>
+        <legend class="form__caption">C каким приложением путешествовали?</legend>
+
+        <ul class="form__user-platform form__list">
+
+          <li class="user-platform__item">
+            <label class="form__label form__label--dark">
+              <input class="form__control user-platform__radio" type="radio" name="platform" value="Pink для iOS" checked>
+              Pink для iOS
+            </label>
+          </li>
+
+          <li class="user-platform__item">
+            <label class="form__label form__label--dark">
+              <input class="form__control user-platform__radio" type="radio" name="platform" value="Pink на Android">
+              Pink на&nbsp;Android
+            </label>
+          </li>
+
+          <li class="user-platform__item">
+            <label class="form__label form__label--dark">
+              <input class="form__control user-platform__radio" type="radio" name="platform" value="Windows Phone">
+              Windows Phone
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+    </section>
+
+    <section class="form__section form__section">
+      <fieldset class="form__fielset">
+        <legend class="form__caption">Опишите свои эмоции</legend>
         <textarea placeholder="Можно прям в красках,не стесняясь в выражениях"
                   class="form__textarea"></textarea>
       </fieldset>
