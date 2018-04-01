@@ -57,6 +57,7 @@
   justify-content: center;
   align-items: flex-start;
   margin-bottom: 35px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -208,7 +209,6 @@ legend.form__caption {
 }
 
 .form__submit-wrapper {
-
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
@@ -231,4 +231,69 @@ legend.form__caption {
   @media (min-width: $tablet-width) {
     padding: 16px 60px;
   }
+}
+
+.form__radio-button {
+  height: 20px;
+  width: 20px;
+  border: 3px solid #000000;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: -25px;
+  top: 7px;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $theme-red-color;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+}
+
+.form__checkbox-button {
+  height: 25px;
+  width: 25px;
+  border: 2px solid #e5e5e5;
+  display: inline-block;
+  position: absolute;
+  left: -25px;
+  top: 7px;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 17px;
+    width: 17px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../img/icon-yes.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+}
+
+.form__label .user-platform__radio:checked + .form__radio-button::after {
+  opacity: 1;
+}
+
+.form__label .form__achievements-checkbox:checked + .form__checkbox-button::after {
+  opacity: 1;
+}
+
+.user-platform__radio,
+.form__achievements-checkbox {
+  display: none;
 }

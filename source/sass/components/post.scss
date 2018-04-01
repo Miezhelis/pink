@@ -2,7 +2,9 @@
   text-align: left;
   color: #283645;
   background-color: #f2f2f2;
-  min-height: 180px;
+  min-height: 152px;
+  margin: 0 auto;
+  padding: 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -11,9 +13,9 @@
     align-items: flex-start;
   }
 
+
+
   .post__details {
-    margin: 0 auto;
-    padding: 20px;
 
     @media (min-width: $tablet-width) {
       margin: 0;
@@ -41,13 +43,26 @@
 
   .post__action {
     text-align: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .post__stats-count {
     font-family: "Open Sans", sans-serif;
   }
+
+  .post__link,
+  .post__stats-count{
+    font-size:12px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $theme-red-color;
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
 
-.gallery__special-wrapper {
-  @include container;
-}
+
