@@ -5,6 +5,10 @@
   padding: 45px 0 70px 0;
   text-align: center;
 
+  @media (min-width: $desktop-width) {
+    padding-top: 65px;
+  }
+
   .contacts__container {
     @include container;
   }
@@ -14,14 +18,19 @@
     line-height: 32px;
     font-weight: 300;
     color: #283645;
-  }
 
-  @media (min-width: $tablet-width) {
-    .contacts__heading {
+    @media (min-width: $tablet-width) {
       font-size: 40px;
       line-height: 48px;
       max-width: 410px;
       margin: auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 50px;
+      line-height: 1.2;
+      max-width: 625px;
+      margin-bottom: 35px;
     }
   }
 
@@ -35,6 +44,8 @@
     font-size: 18px;
     line-height: 22px;
     font-weight: bold;
+
+    margin-bottom: 25px
   }
 
   .contacts__text {

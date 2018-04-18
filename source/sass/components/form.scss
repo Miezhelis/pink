@@ -9,7 +9,7 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-}
+}тт
 
 .form__descr {
   @include container;
@@ -56,13 +56,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-bottom: 35px;
   position: relative;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: center;
-    margin-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
@@ -179,7 +177,19 @@ legend.form__caption {
   @media (min-width: $desktop-width) {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
   }
+}
+
+.form__achievements-item {
+  padding-left: 25px;
+  margin-bottom: 45px;
+  min-width: 25%;
+}
+
+.form__achievements-item:not(:nth-child(3n+3)) {
+  margin-right: 15px;
 }
 
 .form__user-platform {
@@ -240,7 +250,7 @@ legend.form__caption {
   border-radius: 50%;
   display: inline-block;
   position: absolute;
-  left: -25px;
+  left: 0;
   top: 7px;
 
   &::after {

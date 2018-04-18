@@ -60,20 +60,20 @@
     }
   }
 
-  .gallery__img {
+  .gallery__picture {
     display: block;
     width: 100%;
     height: 100%;
   }
 
-  .gallery__img-wpapper--special {
+  .gallery__picture-wrapper--special {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
 
-  .gallery__img--special img{
+  .gallery__picture--special img{
     width: 100%;
   }
 }

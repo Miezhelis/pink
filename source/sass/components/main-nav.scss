@@ -20,6 +20,14 @@
     border: none;
   }
 
+  &:not(:last-child) {
+    @media (min-width: $desktop-width) {
+      margin-right: 45px;
+    }
+  }
+
+
+
   .main-nav__link {
     text-decoration: none;
     text-transform: uppercase;

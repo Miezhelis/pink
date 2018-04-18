@@ -10,13 +10,17 @@
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     background-color: #ffffff;
     padding: 45px 0 115px 0;
-  }
 
-  @media (min-width: $tablet-width) {
-    .reviews__item {
+    @media (min-width: $tablet-width) {
       display: flex;
       flex-direction: column-reverse;
       font-size: 18px;
+    }
+  }
+
+  .reviews__item--hidden {
+    @media (min-width: $desktop-width) {
+      display: none;
     }
   }
 
@@ -25,6 +29,23 @@
     font-size: 18px;
     line-height: 30px;
     font-weight: bold;
+
+    @media (min-width: $desktop-width) {
+      font-size: 24px;
+      margin-top: 30px;
+    }
+  }
+
+  .reviews__title-description {
+    display: none;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: inherit;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
   }
 
   .reviews__item-text {
@@ -32,5 +53,15 @@
     color: #283645;
     line-height: 30px;
     font-weight: 400;
+
+    @media (min-width: $desktop-width) {
+      max-width: 795px;
+      margin: 0 auto;
+    }
   }
+}
+
+.reviews__quotes {
+  background-color: #ffffff;
+  padding-top: 70px;
 }
