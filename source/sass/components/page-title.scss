@@ -11,12 +11,12 @@
   min-height: 170px;
 
   @media (min-width: $tablet-width) {
-    min-height: 325px;
+    min-height: 330px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 110px;
-    min-height: 400px;
+    min-height: 395px;
   }
 
   .page-title__container {
@@ -30,12 +30,18 @@
     line-height: 30px;
     font-weight: 300;
     color: #ffffff;
+    max-width: 300px;
+    margin: 0 auto;
 
     @media (min-width: $tablet-width) {
       font-size: 50px;
       line-height: 1.2;
       max-width: 475px;
-      margin: 0 auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 870px;
+      margin-bottom: 35px;
     }
   }
 }

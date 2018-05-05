@@ -2,18 +2,20 @@
   text-align: left;
   color: #283645;
   background-color: #f2f2f2;
-  min-height: 152px;
   margin: 0 auto;
   padding: 20px;
 
   @media (min-width: $tablet-width) {
+    min-height: 155px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
   }
 
-
+  @media (min-width: $tablet-width) {
+    padding: 25px 30px;
+  }
 
   .post__details {
 
@@ -23,13 +25,25 @@
     }
   }
 
+  .post__details--special {
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
   .post__author {
     font-weight: bold;
     margin: 0;
+    font-size: 15px;
+    line-height: 1.2;
+    margin-bottom: 5px;
   }
 
   .post__date {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 300;
     color: #949aa1;
     text-transform: uppercase;
@@ -39,14 +53,37 @@
     font-weight: 400;
     color: #000000;
     margin: 0;
+    margin-bottom: 9px;
   }
 
   .post__action {
     text-align: left;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
+
+  .post__action--special {
+    @media (min-width: $tablet-width) {
+      justify-content: flex-start;
+      width: 50%;
+      order: -1;
+    }
+  }
+
+  .post__author--special {
+
+    @media (min-width: $tablet-width) {
+      width: 50%;
+      order: -1;
+    }
   }
 
   .post__stats-count {
@@ -54,14 +91,28 @@
   }
 
   .post__link,
-  .post__stats-count{
-    font-size:12px;
+  .post__stats-count {
+    font-size: 12px;
     line-height: 24px;
     font-weight: 400;
     text-transform: uppercase;
     color: $theme-red-color;
     text-decoration: none;
     cursor: pointer;
+  }
+}
+
+.post--special {
+
+  @media (min-width: $tablet-width) {
+    min-height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 25px;
+    padding-bottom: 15px;//photo
+    min-height: 95px;
+    margin-bottom: 48px;
   }
 }
 

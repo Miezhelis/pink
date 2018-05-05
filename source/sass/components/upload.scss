@@ -3,17 +3,25 @@
   background-color: #f2f2f2;
   padding-top: 20px;
 
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    background-color: #ffffff;
+    @include container;
+    margin-bottom: 35px;
+  }
+
   .upload__form {
     @media (min-width: $tablet-width) {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
+      padding: 35px 5px 55px 20px;
     }
 
     @media (min-width: $desktop-width) {
-      @include container;
-      padding: 60px;
-      justify-content: center;
+      padding: 60px 50px 60px 80px;
+      justify-content: space-between;
+      background-color: #f2f2f2;
     }
   }
 
@@ -21,22 +29,20 @@
     @include container;
 
     @media (min-width: $tablet-width) {
-      width: 46%;
-      margin: 0;
-      padding: 0;
-    }
-
-    @media (min-width: $desktop-width) {
       width: 300px;
       margin: 0;
       padding: 0;
-      margin-right: 70px;
+      height: 400px;
     }
   }
 
   .upload__action-wrapper {
+    @media (min-width: $tablet-width) {
+      width: 50%;
+    }
+
     @media (min-width: $desktop-width) {
-      width: 410px;
+      width: 415px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -48,18 +54,21 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 40px;
+    padding-top: 35px;
+    margin-bottom: 15px;
 
     @media (min-width: $tablet-width) {
       display: flex;
       flex-direction: column;
-      padding-top: 0;
       justify-content: flex-start;
-      width: 50%;
+      width: 100%;
+      padding: 0 0 10px 40px;
+      margin-bottom: 55px;
     }
 
     @media (min-width: $desktop-width) {
       width: 100%;
+      padding-left: 0;
     }
   }
 
@@ -73,11 +82,52 @@
 
     @media (min-width: $tablet-width) {
       margin: 0;
+      width: 100%;
+      border-bottom: 2px solid #dddfe0;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: flex-start;
+      padding-top: 30px;
+      padding-bottom: 20px;
     }
 
     @media (min-width: $desktop-width) {
+      padding-top: 0;
       margin-bottom: 16px;
-      width: 100%;
+      padding-bottom: 15px;
+    }
+  }
+
+  .upload__item:first-child {
+    @media (min-width: $tablet-width) {
+      padding-top: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 0;
+    }
+  }
+
+  .upload__item:last-child {
+    @media (min-width: $tablet-width) {
+      padding-top: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 0;
+    }
+  }
+
+  .upload__item svg {
+    @media (min-width: $tablet-width) {
+      width: 25px;
+      height: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 40px;
+      height: 40px;
     }
   }
 
@@ -91,15 +141,20 @@
 
     @media (min-width: $tablet-width) {
       display: inline-block;
+      width: 75%;
+      margin: 0;
+      margin-left: 35px;
     }
 
     @media (min-width: $desktop-width) {
       width: 285px;
       margin-bottom: 0;
+      margin-left: 35px;
     }
 
     &--big {
       display: inline-block;
+      width: 75%;
 
       @media (min-width: $tablet-width) {
         display: none;
@@ -108,6 +163,15 @@
   }
 
   .upload__button-group {
+    padding: 35px 20px 40px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
     @media (min-width: $desktop-width) {
       display: flex;
       flex-direction: row;

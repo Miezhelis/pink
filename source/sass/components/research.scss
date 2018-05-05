@@ -1,36 +1,99 @@
 .research {
   display: none;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
     display: flex;
-    background-color: #f2f2f2;
     color: #000000;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 63px 0;
+    background-color: #f2f2f2;
   }
 
   .research__container {
     @include container;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+  }
+
+  .research__timer {
+    margin-right: 68px;
+  }
+
+  .research__timer-icon {
+    @media (min-width: $tablet-width) {
+      width: 242px;
+      height: 277px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 298px;
+      height: 345px;
+    }
   }
 
   .research__lead {
     max-width: 545px;
+
+    @media (min-width: $desktop-width) {
+      padding: 50px 0;
+    }
   }
 
   .research__title {
     font-size: 30px;
     font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 45px;
+      margin-bottom: 12px;
+      max-width: 275px;
+      line-height: 1;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 100%;
+      margin-bottom: 25px;
+    }
   }
 
   .research__text {
-    font-size: 18px;
-    line-height: 30px;
     font-weight: 400;
+    margin-bottom: 35px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 14px;
+      line-height: 25px;
+      margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .research__link-text{
+    @media (min-width: $desktop-width) {
+      margin: 0;
+    }
   }
 
   .research__link {
     color: $theme-red-color;
-    font-size: 18px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 14px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 18px;
+    }
   }
 }

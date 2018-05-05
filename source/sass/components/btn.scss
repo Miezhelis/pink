@@ -13,6 +13,10 @@
   &--download {
     border: 3px solid #ffffff;
     margin-bottom: 22px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 55px;
+    }
   }
 
   &--green {
@@ -22,6 +26,12 @@
     border: none;
     border-radius: 2px;
     margin-bottom: 40px;
+    padding: 15px 50px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+      padding: 16px 60px;
+    }
   }
 
   &--like {
@@ -43,9 +53,16 @@
     font-weight: bold;
     border: 3px solid $theme-red-color;
     border-radius: 30px;
+    margin-bottom: 15px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 25px;
+      width: 265px;
+    }
 
     @media (min-width: $desktop-width) {
       width: 185px;
+      margin-bottom: 0;
     }
   }
 
@@ -54,6 +71,11 @@
     color: #dddfe0;
     font-weight: bold;
     border: 3px solid #dddfe0;
+    margin-bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 265px;
+    }
 
     @media (min-width: $desktop-width) {
       width: 185px;

@@ -1,15 +1,21 @@
 .form {
-  @include container;
   background-color: #ffffff;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 55px;
+  }
+
   @media screen and (min-width: $desktop-width) {
     justify-content: space-between;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 960px;
+    margin: 0 auto;
   }
-}тт
+}
 
 .form__descr {
   @include container;
@@ -17,18 +23,31 @@
 }
 
 .form__section {
+  @include container;
   font-size: 18px;
   line-height: 30px;
   color: #283645;
   background-color: #ffffff;
-  margin-bottom: 55px;
+  padding-top: 35px;
+  padding-bottom: 40px;
 
-  &:first-child {
-    padding-top: 0;
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    padding-top: 0;
+    margin-bottom: 25px;
+  }
+}
+
+.form__section:first-child {
+  padding-top: 0;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 20px;
   }
 }
 
@@ -40,15 +59,37 @@
   }
 }
 
+.form__section:nth-last-child(2) {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+}
+
 .form__section--tight {
+  @media (min-width: $tablet-width) {
+    order: -3;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    width: 440px;
+    width: 455px;
     flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.form__section--info {
+  @media (min-width: $tablet-width) {
     order: -1;
   }
+
 }
 
 .form__label {
@@ -68,9 +109,60 @@
   }
 }
 
-.form__label--dark {
-  flex-direction: row;
-  align-items: center;
+.form__label:not(:last-child) {
+  margin-bottom: 25px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.form__label--intro.form__label {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  span {
+    margin-left: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 0;
+    }
+  }
+}
+
+.form__label--intro:last-child {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.form__label--contacts {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 375px;
+    margin-bottom: 0;
+  }
+}
+
+.form__label--contacts:last-child {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.form__label--app {
+  padding-left: 50px;
+}
+
+.form__list {
+  margin-left: 15px;
 }
 
 .form__list > li:last-child label {
@@ -79,20 +171,78 @@
   }
 }
 
-.form__fielset {
+.form__fieldset {
   border: none;
   padding: 0;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     border: 2px solid #ececec;
-    padding: 35px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 30px 55px 10px 55px;
+  }
+}
+
+.form__fieldset--more {
+  @media (min-width: $tablet-width) {
+    padding: 30px 60px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 35px 55px;
+  }
+}
+
+.form__fieldset--app {
+  @media (min-width: $tablet-width) {
+    padding: 40px 40px 60px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 50px 40px 55px 70px;
+  }
+}
+
+.form__fieldset--contacts {
+  @media (min-width: $tablet-width) {
+    padding: 40px 60px 30px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 35px 60px 15px 60px;
+  }
+}
+
+.form__fieldset--achievements {
+  @media (min-width: $tablet-width) {
+    padding: 45px 60px 50px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 35px 60px 15px 60px;
   }
 }
 
 legend.form__caption {
   margin: 0 auto;
   padding: 0 20px;
+  line-height: 20px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    white-space: nowrap;
+  }
+}
+
+legend.form__caption:last-child {
+  margin-bottom: 20px;
 }
 
 .form__caption {
@@ -101,6 +251,10 @@ legend.form__caption {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 300;
+
+  @media (min-width: $desktop-width) {
+    font-weight: 400;
+  }
 
   &:last-child {
     @media (min-width: $desktop-width) {
@@ -117,17 +271,16 @@ legend.form__caption {
   }
 }
 
-.form__label--contacts {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-start;
-  }
+.form__caption--sub {
+  margin-left: 20px;
+}
 
-  @media (min-width: $desktop-width) {
-    width: 375px;
-    margin-bottom: 0;
-  }
+.user-platform__item {
+  margin-bottom: 45px;
+}
+
+.user-platform__item:last-child {
+  margin-bottom: 0;
 }
 
 .form__label-wrapper {
@@ -144,15 +297,18 @@ legend.form__caption {
 .form__text-input {
   font-size: 18px;
   line-height: 30px;
-  padding: 13px;
+  padding: 15px;
   border: 2px solid #e5e5e5;
   width: 280px;
   box-sizing: border-box;
-  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+    padding: 13px;
     width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 13px 20px;
   }
 
   &--intro {
@@ -163,7 +319,13 @@ legend.form__caption {
 
   &--contacts {
     @media (min-width: $tablet-width) {
+      padding: 14px;
       border-right: 60px solid #e5e5e5;
+      margin-bottom: 8px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 10px;
     }
   }
 }
@@ -175,22 +337,32 @@ legend.form__caption {
   align-items: flex-start;
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
+    max-height: 215px;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
   }
 }
 
 .form__achievements-item {
-  padding-left: 25px;
-  margin-bottom: 45px;
-  min-width: 25%;
+  padding-left: 50px;
+  margin-bottom: 53px;
 }
 
-.form__achievements-item:not(:nth-child(3n+3)) {
-  margin-right: 15px;
+.form__achievements-item:last-child {
+  margin-bottom: 0;
 }
+
+.form__achievements-item {
+  @media (min-width: $desktop-width) {
+    margin-right: 15px;
+  }
+}
+
+/*.form__achievements-item:nth-child(even) {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+*/
 
 .form__user-platform {
   @include ul-reset;
@@ -201,24 +373,32 @@ legend.form__caption {
 
 .form__textarea {
   width: 280px;
-  height: 200px;
+  min-height: 200px;
   resize: none;
   line-height: 30px;
   color: #283645;
   padding: 20px;
   box-sizing: border-box;
-  margin-bottom: 48px;
+  border: 2px solid #ececec;
 
   @media (min-width: $tablet-width) {
+    min-height: 195px;
     width: 500px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 800px;
+    width: 815px;
+    min-height: 125px;
+    margin-bottom: 0;
+    padding: 17px;
+    letter-spacing: 0.03em;
   }
 }
 
 .form__submit-wrapper {
+  @include container;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
@@ -228,6 +408,9 @@ legend.form__caption {
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
   }
 }
 
@@ -244,20 +427,20 @@ legend.form__caption {
 }
 
 .form__radio-button {
-  height: 20px;
-  width: 20px;
-  border: 3px solid #000000;
+  height: 40px;
+  width: 40px;
+  border: 3px solid #e5e5e5;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
   left: 0;
-  top: 7px;
+  top: 0;
 
   &::after {
     content: "";
     display: block;
-    height: 10px;
-    width: 10px;
+    height: 20px;
+    width: 20px;
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -270,19 +453,19 @@ legend.form__caption {
 }
 
 .form__checkbox-button {
-  height: 25px;
-  width: 25px;
+  height: 40px;
+  width: 40px;
   border: 2px solid #e5e5e5;
   display: inline-block;
   position: absolute;
-  left: -25px;
-  top: 7px;
+  left: -50px;
+  top: -5px;
 
   &::after {
     content: "";
     display: block;
-    height: 17px;
-    width: 17px;
+    height: 25px;
+    width: 25px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -306,4 +489,12 @@ legend.form__caption {
 .user-platform__radio,
 .form__achievements-checkbox {
   display: none;
+}
+
+.form__checkbox-description {
+  margin-left: 15px;
+}
+
+.form__correction {
+  text-transform: uppercase;
 }

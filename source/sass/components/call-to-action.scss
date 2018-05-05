@@ -2,30 +2,73 @@
   @include page-descr;
   margin: 0;
   @include container;
-  padding-top: 95px;
-  padding-bottom: 75px;
+  margin-bottom: 15px;
   color: #283645;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 230px;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 240px;
+  }
 
   .call-to-action__text {
     font-size: inherit;
+    line-height: 30px;
     font-weight: 400;
     margin: 0;
 
-    &--form {
-      display: none;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    .call-to-action__text {
+    @media (min-width: $tablet-width) {
       font-size: 18px;
       line-height: 30px;
+      max-width: 555px; //tablet mark
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 805px;
+      margin: 0 auto;
     }
   }
 
-  &--form {
+  .call-to-action__text--form {
+    display: none;
+
     @media (min-width: $tablet-width) {
-      max-width: 575px;
+      display: inline;
     }
+  }
+}
+
+.call-to-action--form {
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.call-to-action--bottom {
+  min-height: 160px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 195px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 182px;
   }
 }

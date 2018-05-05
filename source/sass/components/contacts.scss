@@ -1,7 +1,5 @@
 .contacts {
-  -webkit-clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0);
-  clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0);
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 45px 0 70px 0;
   text-align: center;
 
@@ -24,6 +22,7 @@
       line-height: 48px;
       max-width: 410px;
       margin: auto;
+      margin-bottom: 25px;
     }
 
     @media (min-width: $desktop-width) {
@@ -44,8 +43,11 @@
     font-size: 18px;
     line-height: 22px;
     font-weight: bold;
+    margin-bottom: 25px;
 
-    margin-bottom: 25px
+    @media (min-width: $tablet-width) {
+      margin-bottom: 5px;
+    }
   }
 
   .contacts__text {
@@ -54,20 +56,29 @@
     line-height: 30px;
     font-weight: 300;
     color: $theme-red-color;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
   }
 }
 
-@media (min-width: $tablet-width) {
-  .contacts__list {
+.contacts__list {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
   }
 
-  @media (min-width: $tablet-width) {
-    .contacts__item {
-      max-width: 245px;
+  .contacts__item {
+    @media (min-width: $tablet-width) {
+      max-width: 220px;
     }
   }
+
+  .contacts__item:not(:last-child){
+    margin-bottom: 30px;
+  }
 }
+
