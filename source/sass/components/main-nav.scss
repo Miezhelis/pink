@@ -26,8 +26,6 @@
     }
   }
 
-
-
   .main-nav__link {
     text-decoration: none;
     text-transform: uppercase;
@@ -39,6 +37,18 @@
     @media (min-width: $desktop-width) {
       text-transform: capitalize;
     }
+  }
+
+  .main-nav__link:hover {
+    color: $theme-red-color;
+  }
+
+  .main-nav__link:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .main-nav__link--active {
+    border-bottom: 1px solid #ffffff;
   }
 }
 

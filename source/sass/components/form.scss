@@ -498,3 +498,15 @@ legend.form__caption:last-child {
 .form__correction {
   text-transform: uppercase;
 }
+
+.form__control:hover,
+.form__checkbox-button:hover,
+.form__radio-button:hover{
+  border: 2px solid #283645;
+}
+
+.form__control:active,
+.form__checkbox-button:active,
+.form__radio-button:active{
+  border: 2px solid $theme-red-color;
+}

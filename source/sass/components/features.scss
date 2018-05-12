@@ -1,7 +1,6 @@
 .features {
   text-align: center;
   background-color: #f2f2f2;
-  margin-bottom: -40px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -15,7 +14,6 @@
 .features__heading-group {
   padding: 65px 0 160px 0;
   background-color: #ffffff;
-  clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
 
   @media (min-width: $tablet-width) {
     padding: 50px 0 100px 0;
@@ -47,6 +45,9 @@
 }
 
 .features__wrapper {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
@@ -84,7 +85,10 @@
 }
 
 .features__list > li:not(:nth-child(3n + 3)) {
-  margin-right: 20px;
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
+
 }
 
 .features__item {
@@ -97,7 +101,8 @@
 }
 
 .features__screen-wrapper {
-  display: none;
+  display: block;
+  order: 1;
 
   @media (min-width: $tablet-width) {
     display: block;

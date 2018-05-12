@@ -1,0 +1,23 @@
+.slider-pagination {
+  position: relative;
+  z-index: 3;
+  font-size: 0;
+  text-align: center;
+}
+
+.slider-pagination__control {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: content-box;
+  width: 6px;
+  height: 6px;
+  margin-right: 20px;
+  background: rgba(40, 54, 69, .3);
+  border-radius: 50%;
+  user-select: none;
+}
+
+.slider-pagination__control--active {
+  background-color: #fff;
+  box-shadow: 0 0 0 3px #283645;
+}

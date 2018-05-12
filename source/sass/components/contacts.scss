@@ -63,6 +63,15 @@
   }
 }
 
+.contacts__text:hover{
+  color: #283645;
+}
+
+.contacts__text:active{
+  color: #283645;
+  opacity: 0.3;
+}
+
 .contacts__list {
   @media (min-width: $tablet-width) {
     display: flex;

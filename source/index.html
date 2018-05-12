@@ -39,23 +39,18 @@
 
   <section class="intro">
     <div class="intro__container">
+      <div class="intro__phone">
 
-      <div class="intro__download-app">
-        <div class="intro__heading">Взгляните на жизнь иначе!</div>
-        <a class="btn btn--download" href="#">Скачать приложение</a>
-        <div class="intro__platform-type">
-          <img src="img/logo-apple.svg" class="intro__platform intro__platform--apple">
-          <img src="img/logo-android.svg" class="intro__platform intro__platform--android">
-          <img src="img/logo-microsoft.svg" class="intro__platform intro__platform--windows">
+        <div class="intro__download-app">
+          <div class="intro__heading">Взгляните на жизнь иначе!</div>
+          <a class="btn btn--download" href="#">Скачать приложение</a>
+          <div class="intro__platform-type">
+            <img src="img/logo-apple.svg" class="intro__platform intro__platform--apple">
+            <img src="img/logo-android.svg" class="intro__platform intro__platform--android">
+            <img src="img/logo-microsoft.svg" class="intro__platform intro__platform--windows">
+          </div>
+          <p class="intro__descr">Доступно для iPhone, iPad, Android, Windows Phone, OS&nbsp;X, Windows&nbsp;8</p>
         </div>
-        <p class="intro__descr">Доступно для iPhone, iPad, Android, Windows Phone, OS&nbsp;X, Windows&nbsp;8</p>
-      </div>
-
-      <div class="intro__img-wrapper">
-        <picture class="intro__img">
-          <source srcset="img/iphone-hand-desktop@1x.png" media="(min-width:960px)">
-          <img src="img/iphone-hand-mobile@1x.png" alt="">
-        </picture>
       </div>
     </div>
   </section>
@@ -69,7 +64,13 @@
       <div class="features__wrapper">
 
         <div class="features__screen-wrapper">
-          <img src="img/iphone-screen-3-tablet@1x.png" width="" height="" alt="Всем привет" class="features__img">
+
+            <picture class="features__img">
+              <source srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x" media="(min-width: 660px)">
+              <source srcset="img/iphone-screen-mobile@1x.png, img/iphone-screen-mobile@2x.png 2x" media="(min-width: 320px)">
+              <img src="img/iphone-screen-mobile@1x.png"  alt="Всем привет">
+            </picture>
+
         </div>
 
         <ul class="features__list">

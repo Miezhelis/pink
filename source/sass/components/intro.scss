@@ -20,18 +20,46 @@
     height: 855px;
   }
 
+  .intro__container {
+    @include container;
+    display: flex;
+    height: 100%;
+
+    @media (min-width: $tablet-width) {
+
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 205px;
+      flex-direction: row-reverse;
+    }
+  }
+
   .intro__img {
     display: block;
   }
 
-  .intro__container {
-    @include container;
+  .intro__phone {
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: 70% 30%;
+    height: 100%;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    justify-content: flex-end;
 
     @media (min-width: $tablet-width) {
-      flex-direction: row;
-      justify-content: space-between;
+      background-image: url("../img/iphone-hand-tablet@1x.png");
+      width: 100%;
+      background-position: 50% 100%;
+      padding-top: 95px;
+      justify-content: flex-start;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/iphone-hand-desktop@1x.png");
+      background-position: 163% 50%;
+      padding-top: 0;
     }
   }
 
@@ -41,15 +69,20 @@
     @media (min-width: $tablet-width) {
       visibility: visible;
       font-size: 40px;
-      line-height: 48px;
+      line-height: 1.2;
       font-weight: 300;
       color: #ffffff;
+      max-width: 245px;
+      margin: 0 auto;
+      margin-bottom: 30px;
     }
 
     @media (min-width: $desktop-width) {
       font-size: 50px;
-      line-height: 1;
-      margin-bottom: 55px;
+      line-height: 1.2;
+      padding-top: 15px;
+      max-width: 300px;
+      margin-bottom: 50px;
     }
   }
 
@@ -62,7 +95,19 @@
     }
 
     @media (min-width: $desktop-width) {
-      max-width: 360px;
+      max-width: 330px;
+      padding-right: 25px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .intro__platform-type {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 50px;
     }
   }
 
@@ -76,7 +121,7 @@
     color: #ffffff;
     font-weight: 300;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       font-size: 18px;
     }
   }

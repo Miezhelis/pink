@@ -14,8 +14,14 @@
     border: 3px solid #ffffff;
     margin-bottom: 22px;
 
+    @media (min-width: $tablet-width) {
+      margin-bottom: 45px;
+      padding: 13px 50px;
+    }
+
     @media (min-width: $desktop-width) {
-      margin-bottom: 55px;
+      margin-bottom: 70px;
+      font-weight: 600;
     }
   }
 
@@ -45,7 +51,6 @@
     padding: 0;
     margin-bottom: 0;
   }
-
 
   &--post {
     width: 280px;
@@ -82,3 +87,49 @@
     }
   }
 }
+
+//btn--download
+.btn--download:hover {
+  background-color: #ffffff;
+  color: $theme-red-color;
+}
+
+.btn--download:active {
+  background-color: #ffffff;
+  color: rgba(210, 40, 86, 0.3);
+}
+
+//btn--post
+.btn--post:hover {
+  background-color: $theme-red-color;
+  color: #ffffff;
+}
+
+.btn--post:active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+//btn--cancel
+.btn--cancel:hover {
+  border:3px solid #b5b9be;
+  color: #b5b9be;
+}
+
+.btn--cancel:active {
+  background-color: #b5b9be;
+  color: #ffffff;
+}
+
+//btn--green
+.btn--green:hover {
+  background-color: #1c9b5e;
+}
+
+.btn--green:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.btn--green:disabled {
+  background-color: #e5e5e5;
+}
+
