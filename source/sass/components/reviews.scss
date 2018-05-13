@@ -3,7 +3,6 @@
   background-color: #f2f2f2;
   margin-top: -50px;
   z-index: 0;
-  padding-bottom: 35px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -105,14 +104,24 @@
     content: "";
     position: absolute;
     right: 0;
-    bottom: -80px;
+    bottom: -35px;
     z-index: 10;
     width: 100%;
-    height: 80px;
+    height: 35px;
     background-image: linear-gradient(to top left, transparent 50%, #ffffff 50%);
     background-repeat: no-repeat;
     background-position: 0 0, 100% 0;
     background-size: 100% 100%;
+
+    @media (min-width: $tablet-width) {
+      bottom: -50px;
+      height: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: -80px;
+      height: 80px;
+    }
   }
 }
 

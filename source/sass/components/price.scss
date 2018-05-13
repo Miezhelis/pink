@@ -18,6 +18,7 @@
 
 .price__container {
   @include container;
+  position: relative;
 }
 
 .price-table {

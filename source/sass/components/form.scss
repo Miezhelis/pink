@@ -418,7 +418,7 @@ legend.form__caption:last-child {
   color: $theme-red-color;
 }
 
-.form__full-text{
+.form__full-text {
   display: none;
 
   @media (min-width: $desktop-width) {
@@ -443,6 +443,7 @@ legend.form__caption:last-child {
   position: absolute;
   left: 0;
   top: 0;
+  cursor: pointer;
 
   &::after {
     content: "";
@@ -468,7 +469,7 @@ legend.form__caption:last-child {
   position: absolute;
   left: -50px;
   top: -5px;
-
+  cursor: pointer;
   &::after {
     content: "";
     display: block;
