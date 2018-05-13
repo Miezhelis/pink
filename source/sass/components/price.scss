@@ -1,10 +1,11 @@
 
 .price {
-  padding-top: 90px;
-  padding-bottom: 70px;
   text-transform: uppercase;
   overflow: hidden;
   background-color: #f2f2f2;
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 90px;
 
   @media (min-width: $desktop-width) {
     padding-top: 140px;
@@ -43,7 +44,7 @@
     font-size: 18px;
     font-weight: bold;
     line-height: 1.2;
-    margin: 10px 0;
+    margin: 20px 0;
 
     @media (min-width: $tablet-width) {
       font-size: 15px;
@@ -52,7 +53,7 @@
   }
 
   .price-table__cost {
-    font-size: 14px;
+    font-size: 23px;
     font-weight: 400;
     line-height: 1;
 
@@ -84,6 +85,7 @@
 
   .price-table__flag--hit {
     background: url("../img/bg-hit.svg") no-repeat 0 0;
+
   }
 }
 
@@ -93,9 +95,10 @@
   background-repeat: no-repeat;
   background-position: 89% 50%;
   border: 2px solid #e5e5e5;
-  padding-top: 16px;
-  padding-bottom: 13px;
+  padding-top: 15px;
+  padding-bottom: 17px;
   padding-left: 22px;
+  min-width: 275px;
 
   @media (min-width: $tablet-width) {
     background-position: 50% 50%;

@@ -21,6 +21,17 @@
 
   .research__timer {
     margin-right: 68px;
+    position: relative;
+
+    &::before{
+      position: absolute;
+      content: "24";
+      top: 50%;
+      left: 26%;
+      font-size: 97px;
+      font-weight: 700;
+      color: #d22856;
+    }
   }
 
   .research__timer-icon {

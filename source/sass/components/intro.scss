@@ -21,12 +21,11 @@
   }
 
   .intro__container {
-    @include container;
     display: flex;
     height: 100%;
 
     @media (min-width: $tablet-width) {
-
+      @include container;
     }
 
     @media (min-width: $desktop-width) {

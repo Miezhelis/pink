@@ -1,8 +1,21 @@
 .slider-pagination {
-  position: relative;
-  z-index: 3;
+  position: absolute;
+  z-index: 11;
   font-size: 0;
   text-align: center;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+}
+
+.slider-pagination--price {
+  display: block;
+  bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
 }
 
 .slider-pagination__control {

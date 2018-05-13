@@ -1,9 +1,10 @@
 .main-header {
   background-color: #283645;
-  min-height: 110px;
+
   display: block;
   font-size: 18px;
   line-height: 32px;
+  position: relative;
 
   @media (min-width: $desktop-width) {
     height: 110px;
@@ -24,5 +25,20 @@
       justify-content: space-between;
       align-items: center;
     }
+  }
+
+  .main__header__top-menu{
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @media (min-width: $tablet-width) {
+      height: 110px;
+    }
+  }
+
+  .main-header__logo{
+    padding-left: 20px;
   }
 }

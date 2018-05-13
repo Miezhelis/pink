@@ -418,6 +418,14 @@ legend.form__caption:last-child {
   color: $theme-red-color;
 }
 
+.form__full-text{
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}
+
 .form__btn {
   margin-bottom: 0;
 
