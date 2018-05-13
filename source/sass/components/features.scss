@@ -24,7 +24,7 @@
     padding: 65px 0 160px 0;
   }
 
-  &:after {
+  &::after {
     position: absolute;
     left: 0;
     content: "";
@@ -188,4 +188,3 @@
     margin: 0 auto;
   }
 }
-

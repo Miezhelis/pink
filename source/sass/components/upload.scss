@@ -189,3 +189,11 @@
   border-radius: 10px;
   cursor: pointer;
 }
+
+.upload__icon:hover {
+  fill: #8d949b;
+}
+
+.upload__icon:active {
+  fill: $theme-red-color;
+}

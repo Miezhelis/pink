@@ -31,7 +31,12 @@
       font-size: 97px;
       font-weight: 700;
       color: #d22856;
+
+      @media (min-width: $desktop-width) {
+        font-size: 120px;
+      }
     }
+
   }
 
   .research__timer-icon {
